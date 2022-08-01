@@ -8,7 +8,11 @@ class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Authentication Screen')),
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: const Text('Authentication Screen'),
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

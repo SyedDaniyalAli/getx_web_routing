@@ -7,10 +7,13 @@ class HomeSubScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Sub Home')),
+      appBar: AppBar(
+        title: const Text('Sub Home'),
+        centerTitle: true,
+      ),
       body: Center(
         child: MaterialButton(
-          child: const Text('Sub Home'),
+          child: const Text('Settings'),
           onPressed: () {
             RouteNames.goToSettings();
           },

@@ -34,6 +34,6 @@ class RouteNames {
   }
 
   static void goToAuth() {
-    Get.offAllNamed(auth);
+    Get.offNamedUntil(auth, (route) => false);
   }
 }
