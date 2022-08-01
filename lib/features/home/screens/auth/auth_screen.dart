@@ -17,7 +17,7 @@ class AuthScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Press Sign button in to Signin"),
+            const Text("Press Sign in button in to Signin"),
             const SizedBox(
               height: 10,
             ),
