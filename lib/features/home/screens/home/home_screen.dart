@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (params != null) Text("Hi $params"),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             MaterialButton(
