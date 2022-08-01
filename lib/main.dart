@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:getx_web_routing/features/home/screens/auth/auth_screen.dart';
-import 'package:getx_web_routing/features/home/screens/home/home_screen.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:get/get.dart';
@@ -34,16 +32,7 @@ class MyApp extends StatelessWidget {
           }
         });
       },
-      home: ValueListenableBuilder<Box>(
-        valueListenable: Hive.box('box').listenable(keys: ['signIn']),
-        builder: (context, box, widget) {
-          print(box.get('signIn') ?? false);
-          return box.get('signIn') ?? false
-              ? const HomeScreen()
-              : const AuthScreen();
-        },
-      ),
-      // initialRoute: RouteNames.auth,
+      initialRoute: RouteNames.auth,
       getPages: RouteNames.pages,
     );
   }
